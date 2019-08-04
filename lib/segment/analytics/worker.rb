@@ -3,12 +3,12 @@ require 'segment/analytics/message_batch'
 require 'segment/analytics/request'
 require 'segment/analytics/utils'
 
-module Segment
+module SegmentAPI
   class Analytics
     class Worker
-      include Segment::Analytics::Utils
-      include Segment::Analytics::Defaults
-      include Segment::Analytics::Logging
+      include SegmentAPI::Analytics::Utils
+      include SegmentAPI::Analytics::Defaults
+      include SegmentAPI::Analytics::Logging
 
       # public: Creates a new worker
       #

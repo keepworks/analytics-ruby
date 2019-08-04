@@ -61,7 +61,7 @@ gem install 'analytics-ruby'
 
 Create an instance of the Analytics object:
 ```ruby
-analytics = Segment::Analytics.new(write_key: 'YOUR_WRITE_KEY')
+analytics = SegmentAPI::Analytics.new(write_key: 'YOUR_WRITE_KEY')
 ```
 
 Identify the user for the people section, see more [here](https://segment.com/docs/libraries/ruby/#identify).
@@ -92,7 +92,7 @@ Documentation is available at [segment.com/docs/sources/server/ruby](https://seg
 
 ## Testing
 
-You can use the `stub` option to Segment::Analytics.new to cause all requests to be stubbed, making it easier to test with this library.
+You can use the `stub` option to SegmentAPI::Analytics.new to cause all requests to be stubbed, making it easier to test with this library.
 
 ## License
 
@@ -121,4 +121,3 @@ THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/segmentio/analytics-ruby/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
